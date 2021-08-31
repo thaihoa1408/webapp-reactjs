@@ -1,0 +1,175 @@
+@media screen and (max-width: 1024px) {
+  /*responsive for main view */
+  .mainview-container {
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+    background: transparent url(./images/pic_1.jpg) no-repeat 50% / cover;
+  }
+  /*responsive for sidebar*/
+  .sidebar-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+        315deg,
+        rgba(67, 67, 67, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 74%
+      ),
+      url("./images/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    transition: 500ms;
+  }
+  .sidebar-container.active {
+    height: 100vh;
+    left: -100%;
+    transition: 500ms;
+  }
+  .dropdown-link {
+    width: 100%;
+  }
+  /* responsive for navbar */
+  .navbar-icon,
+  .navbar-text,
+  .user-container {
+    font-size: 16px;
+  }
+  /* responsive for fleetview page*/
+  .fleetview {
+    width: 100%;
+    min-width: 0;
+  }
+  .fleetview-header {
+    width: 100vw;
+    height: 10vh;
+    font-size: 0.8rem;
+    padding-right: 10px;
+  }
+  .fleetview-body {
+    flex-direction: column;
+  }
+  .fleetview-body-map {
+    width: calc(100vw);
+    height: 35vh;
+  }
+  .fleetview-body-table {
+    width: 100vw;
+    height: 55vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .fleetview-body-table-row-2 > div:nth-child(2) {
+    flex-direction: column;
+  }
+  .fleetview-body-table-row-4 {
+    flex-direction: column;
+  }
+  .active-power {
+    width: 100%;
+  }
+  .overview-today {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    font-size: 13px;
+  }
+  /*responsive for charting tool page*/
+  .charting-tool-delete-analysis-container {
+    left: 0;
+    top: 0;
+  }
+  .charting-tool-chart-save-container {
+    width: 100%;
+    left: 0;
+  }
+  /**/
+  .sidebar-change-password {
+    width: 100%;
+  }
+  .sidebar-change-password-action {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /*
+  .devicelist {
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  .inverter-detail {
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  .meter-detail,
+  .weather-station-detail {
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  .devicelist-body-row-2 {
+    width: max-content;
+  }
+  .devicelist-body-row-1 {
+    width: max-content;
+  }*/
+  /* responsive for budget production input page*/
+  .budget-production-input-add-record {
+    width: 100vw;
+    height: 100vh;
+  }
+  .budget-production-input-add-record .container {
+    left: 0;
+    top: 0;
+    width: 90vw;
+    height: 500px;
+  }
+  .budget-production-input-add-record .container > section {
+    margin-left: 5px;
+    width: 100%;
+  }
+  .budget-production-input-add-record .row-2 > div > input {
+    width: 40%;
+    padding-left: 5px;
+  }
+  .budget-production-input-delete-record-container {
+    left: 0;
+    top: 0;
+    width: 90vw;
+  }
+
+  /*responsive for datatype page*/
+  .datatype-editor {
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+  }
+  .datatype-editor-body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .datatype-editor-table {
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .datatype-add-new-item > div {
+    margin-right: 5px;
+  }
+  .datatype-add-new-item > div:nth-child(1) > input {
+    width: 120px;
+  }
+}

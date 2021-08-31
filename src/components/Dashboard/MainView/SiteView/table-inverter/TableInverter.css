@@ -1,0 +1,97 @@
+.table-container {
+  width: 65%;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 15px;
+}
+.table-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.table-scroll {
+  /*width:100%; */
+  display: block;
+  empty-cells: show;
+
+  /* Decoration */
+  border-spacing: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.table-scroll thead {
+  background-image: linear-gradient(to left, #0b2440, #033c3e);
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.table-scroll tbody {
+  /* Position */
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
+  /* Decoration */
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.table-scroll tbody tr {
+  height: 40px;
+}
+.table-scroll tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table-scroll td,
+.table-scroll th {
+  flex-basis: 100%;
+  flex-grow: 2;
+  display: block;
+  padding: 1rem;
+  text-align: left;
+}
+.table-scroll th > button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+}
+.table-scroll th > button:focus {
+  outline: none;
+}
+.sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.sort-up.active {
+  color: rgb(0, 204, 255);
+}
+.sort-down.active {
+  color: rgb(0, 204, 255);
+}
+/* Other options */
+.table-scroll tbody tr td:nth-child(1) {
+  color: rgb(0, 204, 255);
+  font-size: 15px;
+}
+.table-scroll tbody tr:nth-child(2n) {
+  background-color: rgba(130, 130, 170, 0.1);
+}
+.table-scroll tbody tr:hover {
+  background-color: #0e779e;
+}
+
+.body-half-screen {
+  max-height: 250px;
+  min-height: 200px;
+}

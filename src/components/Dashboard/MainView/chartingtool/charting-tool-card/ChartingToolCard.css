@@ -1,0 +1,63 @@
+.charting-tool-card {
+  width: 280px;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px 0 rgb(41 50 62 / 60%);
+  padding: 16px 12px 12px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  margin: 20px 20px 20px 20px;
+}
+.charting-tool-card:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.charting-tool-card > header {
+  font-size: 16px;
+  height: 25px;
+  line-height: 25px;
+  width: calc(100% - 5px);
+  color: #fff;
+  white-space: nowrap;
+  padding-left: 10px;
+  position: relative;
+  display: flex;
+}
+.charting-tool-card > header > div:nth-child(1) {
+  margin-right: 10px;
+}
+.charting-tool-card > header > div:nth-child(2) {
+  margin-right: 10px;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.charting-tool-card > header > div:nth-child(3) {
+  position: absolute;
+  right: 10px;
+}
+.charting-tool-card > header .chart-icon {
+  font-size: 20px;
+  color: #00a7db;
+  position: relative;
+  top: 3px;
+}
+.charting-tool-card > header .close-icon {
+  font-size: 20px;
+  color: #00a7db;
+  position: relative;
+  top: 3px;
+}
+.charting-tool-card > section {
+  margin: 12px 0 4px;
+  font-size: 14px;
+  height: 100px;
+  line-height: 21px;
+  color: hsla(0, 0%, 100%, 0.6);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

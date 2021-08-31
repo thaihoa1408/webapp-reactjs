@@ -1,0 +1,8 @@
+.mainview-container {
+  width: calc(100% - 210px);
+  height: 100%;
+  background: transparent url(../../../images/pic_1.jpg) no-repeat 50% / cover;
+  overflow: auto;
+  z-index: 1;
+  position: relative;
+}

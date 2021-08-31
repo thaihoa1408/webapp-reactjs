@@ -1,0 +1,8 @@
+.dashboard-container {
+  background: #ecf0f1;
+  height: 100vh;
+}
+.dashboard-body {
+  display: flex;
+  height: calc(100vh - 60px);
+}

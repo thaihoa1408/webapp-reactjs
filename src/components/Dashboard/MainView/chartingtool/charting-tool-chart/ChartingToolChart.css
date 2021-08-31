@@ -1,0 +1,323 @@
+.charting-tool-chart {
+  width: 100%;
+  position: relative;
+}
+.charting-tool-chart-header {
+  display: flex;
+  color: #fff;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.charting-tool-chart-header > span:nth-child(1) {
+  position: relative;
+  top: 3px;
+}
+.charting-tool-chart-header > span:nth-child(3) {
+  width: 3px;
+  height: 18px;
+  background-color: white;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.charting-tool-chart-header .save-active {
+  position: absolute;
+  right: 20px;
+  border: 1px solid #0cf;
+  color: #0cf;
+  border-radius: 2px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 30px;
+  background-color: transparent;
+  font-size: 16px;
+  align-items: center;
+  outline: none;
+}
+.charting-tool-chart-header .save-inactive {
+  position: absolute;
+  right: 20px;
+  border: 1px solid #0cf;
+  color: #0cf;
+  border-radius: 2px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  background-color: transparent;
+  font-size: 16px;
+  align-items: center;
+  outline: none;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+  color: rgba(0, 204, 255, 0.3);
+  cursor: not-allowed;
+}
+.charting-tool-chart-header .save-active > span:nth-child(1),
+.charting-tool-chart-header .save-inactive > span:nth-child(1) {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+.charting-tool-chart-header > span:nth-child(2) {
+  cursor: pointer;
+}
+.charting-tool-chart-period {
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.charting-tool-chart-period .period-select {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-right: 32px;
+  cursor: pointer;
+}
+.charting-tool-chart-period .period-select.active {
+  color: #0cf;
+}
+.charting-tool-chart-period-infor {
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #083541;
+  border: solid 1px #00f9fc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.charting-tool-chart-period-infor > div {
+  margin-left: 15px;
+}
+.charting-tool-chart-period-dropdown {
+  width: 600px;
+  height: fit-content;
+  padding-left: 10px;
+  border: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  z-index: 50;
+  margin-top: 5px;
+}
+.charting-tool-chart-period-dropdown-ok {
+  width: 600px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 50;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.charting-tool-chart-period-dropdown-ok > div {
+  position: absolute;
+  right: 10px;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  padding-bottom: 10px;
+  background: rgba(0, 204, 255, 0.8);
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.react-calendar {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(0, 204, 255, 0.8);
+}
+
+.react-calendar button {
+  color: #fff;
+}
+.react-calendar__month-view__weekdays {
+  color: rgba(255, 255, 255, 0.63);
+}
+.react-calendar__navigation button:enabled:hover {
+  background: none;
+}
+.react-calendar__tile--now {
+  background: #77770d;
+}
+.react-calendar button:disabled {
+  background: rgba(0, 0, 0, 0.9);
+}
+.react-calendar__tile:enabled:hover {
+  background-color: rgba(0, 204, 255, 0.137);
+}
+
+.charting-tool-chart-viewer {
+  background-color: rgba(37, 52, 65, 0.6);
+  width: 99%;
+  color: #fff;
+}
+.charting-tool-chart-viewer > header {
+  position: relative;
+  line-height: 38px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(103, 236, 255, 0.25),
+    rgba(103, 236, 255, 0)
+  );
+  padding: 0 0 0 16px;
+}
+
+.charting-tool-chart-viewer > section {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.charting-tool-chart-table {
+  width: 99%;
+  background-color: rgba(37, 52, 65, 0.6);
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.charting-tool-chart-table > header {
+  width: 100%;
+  line-height: 38px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(103, 236, 255, 0.25),
+    rgba(103, 236, 255, 0)
+  );
+  padding: 0 0 0 16px;
+}
+.charting-tool-chart-table-export {
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+}
+.charting-tool-chart-table-export .export-icon {
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.charting-tool-chart-table svg {
+  color: #fff;
+}
+.charting-tool-chart-save {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charting-tool-chart-save-container {
+  width: 600px;
+  background-color: #094d67;
+  position: relative;
+  left: -100px;
+}
+.charting-tool-chart-save-container > header {
+  width: 100%;
+  line-height: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 0 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+}
+.charting-tool-chart-save-container > header > span:nth-child(2) {
+  position: absolute;
+  right: 20px;
+}
+.charting-tool-chart-save-container > section {
+  padding: 20px 20px 15px 18px;
+  font-size: 14px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+  position: relative;
+}
+.charting-tool-chart-save-container > section > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.charting-tool-chart-save-container > section > div:nth-child(1) > div,
+.charting-tool-chart-save-container > section > div:nth-child(2) > div {
+  color: hsla(0, 0%, 100%, 0.8);
+  width: 100px;
+}
+.charting-tool-chart-save-container > section > div:nth-child(1) > input {
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  border: 1px solid #0cf;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  padding: 0 0 0 10px;
+}
+.charting-tool-chart-save-container > section > div:nth-child(2) > textarea {
+  width: 440px;
+  height: 105px;
+  line-height: 30px;
+  border-radius: 2px;
+  border: 1px solid #0cf;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  padding: 0 0 0 10px;
+  font-family: "Shippori Mincho B1", serif;
+}
+.charting-tool-chart-save-container > section > div:nth-child(3) {
+  color: rgb(255, 66, 66);
+  font-size: 16px;
+  width: 100%;
+  height: 20px;
+}
+.charting-tool-chart-save-container > footer {
+  height: 62px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 8px;
+}
+.charting-tool-chart-save-container > footer > span:nth-child(1) {
+  color: #0cf;
+  font-weight: 500;
+  border: 1px solid #00a7db;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 14px;
+}
+.charting-tool-chart-save-container > footer > span:nth-child(2) {
+  color: #fff;
+  background: #00a7db;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 14px;
+  border: 1px solid #00a7db;
+}

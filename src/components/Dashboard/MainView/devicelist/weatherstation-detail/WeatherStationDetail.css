@@ -1,0 +1,119 @@
+.weather-station-detail {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.weather-station-detail-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.weather-station-detail-body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  margin-top: 40px;
+}
+.weather-station-detail-body-row-1 {
+  width: 97%;
+  height: 45px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.weather-station-detail-body-row-1 > span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.weather-station-detail-body-row-2 {
+  width: 98%;
+  height: 70px;
+  margin-left: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 204, 255, 0.05),
+    rgba(0, 204, 255, 0.25) 50%,
+    rgba(0, 204, 255, 0.05)
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+.weather-station-detail-body-row-2 .row-1 {
+  display: flex;
+  align-items: center;
+}
+.weather-station-detail-body-row-2 .row-1 > div:nth-child(1) {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.weather-station-detail-body-row-2 .row-1 > div:nth-child(2) {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(7, 201, 136);
+  color: rgb(7, 201, 136);
+  margin-right: 5px;
+}
+.weather-station-detail-body-row-2 .row-1 > div:nth-child(3) {
+  color: rgb(7, 201, 136);
+}
+.weather-station-detail-body-row-3 {
+  width: 98%;
+  height: 366px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.weather-station-detail-body-row-3 > header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.weather-station-detail-body-row-3 > section {
+  width: 100%;
+  height: 316px;
+  display: flex;
+  background: rgba(0, 34, 48, 0.5);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.weather-station-detail-body-row-3 > section > div {
+  height: 100%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.weather-station-detail-body-row-3 > section > div:nth-child(1) > div {
+  height: 80px;
+}
+.weather-station-detail-body-row-3
+  > section
+  > div:nth-child(1)
+  > div
+  > div:nth-child(2) {
+  color: #3cc;
+}
+.weather-station-detail-body-row-3 > section > div:nth-child(2) {
+  width: 150px;
+}
+.weather-station-detail-body-row-3 > section > div:nth-child(3) > div {
+  height: 80px;
+}
+.weather-station-detail-body-row-3 > section > div:nth-child(3) span {
+  color: #3cc;
+  margin-left: 5px;
+}

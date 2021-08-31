@@ -1,0 +1,272 @@
+.sitelist {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.sitelist-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.sitelist-state {
+  margin-top: 50px;
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #f1f1f1;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  position: relative;
+}
+.sitelist-state > div {
+  box-sizing: border-box;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  margin-right: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 167, 219, 0.3);
+  cursor: pointer;
+}
+.sitelist-state > div:nth-child(6) {
+  background-color: transparent;
+  font-size: 25px;
+  position: absolute;
+  right: 0px;
+  margin-right: 0;
+}
+.sitelist-state > div:nth-child(6) > div {
+  margin-left: 10px;
+}
+.sitelist-state > div:nth-child(6) > div.active {
+  color: #00a7db;
+}
+.sitelist-state > div.active {
+  background: #00a7db;
+}
+.circle-1 {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.circle-2 {
+  width: 8px;
+  height: 8px;
+  background-color: #ffbb2a;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.circle-3 {
+  width: 8px;
+  height: 8px;
+  background-color: #07c988;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.circle-4 {
+  width: 8px;
+  height: 8px;
+  background-color: #8da6bb;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.sitelist-body-item {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.sitelist-body-list {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px 0px 20px;
+}
+.sitelist-body-list-search {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 0;
+  position: relative;
+}
+.sitelist-body-list-search > input {
+  width: 250px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgba(4, 29, 34, 0.4);
+  border: 1px solid rgba(1, 204, 255, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 0 12px;
+}
+.sitelist-body-list-search > input::placeholder {
+  color: rgba(185, 184, 184, 0.8);
+}
+.sitelist-body-list-search > input:focus {
+  outline: none;
+}
+.sitelist-body-list-search > div {
+  position: relative;
+  top: 15px;
+  left: -20px;
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.6);
+  transform: translateY(-50%);
+  background: url(../../../../images/searchicon.png) no-repeat 50%;
+}
+.sitelist-body-list-search .export {
+  color: #f1f1f1;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid #00a7db;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #0cf;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+}
+.sitelist .table-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
+.sitelist table {
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.sitelist table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 49px;
+  line-height: 47px;
+  background-color: #043447;
+  width: 25vw;
+  min-width: 200px;
+}
+.sitelist table thead th > div {
+  cursor: pointer;
+}
+.sitelist table td {
+  text-align: left;
+  background-color: #00425a;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sitelist table tbody tr:hover {
+  color: #00a7db;
+}
+.sitelist table thead th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  padding-left: 20px;
+}
+.sitelist table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+}
+.sitelist table thead th:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 50;
+}
+.sitelist table thead th:nth-child(3) {
+  position: sticky;
+  left: 400px;
+  z-index: 50;
+}
+.sitelist table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 25;
+}
+.sitelist table tbody td:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 25;
+}
+.sitelist table tbody td:nth-child(3) {
+  position: sticky;
+  left: 400px;
+  z-index: 25;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sitelist tbody tr:nth-child(2n) td {
+  background-color: #003c54;
+}
+.sitelist .sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.sitelist .sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.sitelist .sort-up.active {
+  color: rgb(0, 204, 255);
+}
+.sitelist .sort-down.active {
+  color: rgb(0, 204, 255);
+}
+.sitelist-pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  color: #f1f1f1;
+}
+.sitelistbox {
+  display: none;
+}

@@ -1,0 +1,26 @@
+.meter-detail-production-statis {
+  width: 25%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+.meter-detail-production-statis > header {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+}
+.meter-detail-production-statis > section {
+  width: 100%;
+  height: calc(100% -44px);
+}
+.meter-detail-production-statis > section > div {
+  padding: 18px 16px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+.meter-detail-production-statis > section > div > span:nth-child(1) {
+  color: #3cc;
+  margin-right: 10px;
+}

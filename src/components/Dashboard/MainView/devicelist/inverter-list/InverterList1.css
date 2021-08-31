@@ -1,0 +1,254 @@
+.inverter-list {
+  width: 100%;
+  height: 100%;
+}
+.inverter-list .table-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
+.inverter-list table {
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.inverter-list table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 49px;
+  line-height: 47px;
+  background-color: #043447;
+  width: 25vw;
+  min-width: 200px;
+}
+.inverter-list table thead th > div {
+  cursor: pointer;
+}
+.inverter-list table td {
+  text-align: left;
+  background-color: #00425a;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 20px;
+}
+.inverter-list table tbody tr:hover {
+  color: #00a7db;
+}
+.inverter-list table thead th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  padding-left: 20px;
+}
+.inverter-list table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+}
+.inverter-list table thead th:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 50;
+}
+.inverter-list table thead th:nth-child(3) {
+  position: sticky;
+  left: 400px;
+  z-index: 50;
+}
+.inverter-list table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 25;
+}
+.inverter-list table tbody td:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 25;
+}
+.inverter-list table tbody td:nth-child(3) {
+  position: sticky;
+  left: 400px;
+  z-index: 25;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inverter-list tbody tr:nth-child(2n) td {
+  background-color: #003c54;
+}
+.inverter-list .sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.inverter-list .sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.inverter-list .sort-up.active {
+  color: rgb(0, 204, 255);
+}
+.inverter-list .sort-down.active {
+  color: rgb(0, 204, 255);
+}
+.inverter-list-search {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.inverter-list-search > input {
+  width: 250px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgba(4, 29, 34, 0.4);
+  border: 1px solid rgba(1, 204, 255, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 0 12px;
+}
+.inverter-list-search > input::placeholder {
+  color: rgba(185, 184, 184, 0.8);
+}
+.inverter-list-search > input:focus {
+  outline: none;
+}
+.inverter-list-search > div {
+  position: relative;
+  top: 15px;
+  left: -20px;
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.6);
+  transform: translateY(-50%);
+  background: url(../../../../../images/searchicon.png) no-repeat 50%;
+}
+.inverter-list .table-container::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  display: unset;
+}
+.inverter-list .table-container:hover::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  display: unset;
+}
+.inverter-list .table-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.inverter-list .table-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #28c6de;
+  -webkit-box-shadow: inset 0 0 6px #28c6de;
+}
+.pageNumbers {
+  list-style: none;
+  display: flex;
+}
+.pageNumbers li {
+  background-color: #00a7db;
+  border-color: #00a7db;
+  color: #fff;
+  line-height: 22px;
+  height: 24px;
+  width: 30px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.pageNumbers li.active {
+  line-height: 22px;
+  color: #0cf;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 2px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 24px;
+}
+.pageNumbers button {
+  background-color: #00a7db;
+  border: 1px solid;
+  border-color: #00a7db;
+  color: #fff;
+  line-height: 22px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.pageNumbers button:hover {
+  background-color: rgb(28, 202, 255);
+}
+.pageNumbers button:focus {
+  outline: none;
+}
+.inverter-list-pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.rows-per-page {
+  position: absolute;
+  right: 0px;
+}
+.rows-per-page > div:nth-child(1) {
+  font-size: 14px;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 115px;
+  height: 28px;
+  display: flex;
+  line-height: 24px;
+  cursor: pointer;
+}
+.rows-per-page > div:nth-child(1) > div:nth-child(1) {
+  width: 80%;
+  padding-left: 20px;
+}
+.rows-per-page > div:nth-child(2) {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  z-index: 5;
+  width: 115px;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+}
+.rows-per-page > div:nth-child(2) > div {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.rows-per-page > div:nth-child(2) > div:hover {
+  background-color: rgba(0, 204, 255, 0.15);
+}

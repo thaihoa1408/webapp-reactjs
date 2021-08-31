@@ -1,0 +1,39 @@
+.inverter-detail-aidata {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.inverter-detail-aidata > header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+}
+.inverter-detail-aidata > section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background: rgba(11, 75, 98, 0.4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.inverter-detail-aidata > section > div {
+  width: calc(100% / 3);
+  font-size: 16px;
+  height: 46px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(164, 165, 179, 0.4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-aidata > section > div > span:nth-child(1) {
+  margin-right: 20px;
+}
+.inverter-detail-aidata > section > div > span:nth-child(2) {
+  margin-right: 5px;
+}

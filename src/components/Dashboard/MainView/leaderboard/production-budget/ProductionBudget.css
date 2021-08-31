@@ -1,0 +1,134 @@
+.production-budget {
+  width: 97%;
+  height: 100%;
+  background-color: rgba(37, 52, 65, 0.6);
+  margin-left: 20px;
+}
+.production-budget > header {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(103, 236, 255, 0.25),
+    rgba(103, 236, 255, 0)
+  );
+  color: 15px;
+  padding-left: 20px;
+  display: flex;
+}
+.production-budget .calendar {
+  position: absolute;
+  right: 15px;
+}
+.production-budget .calendar > div:nth-child(1) {
+  width: 150px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.production-budget .calendar > div:nth-child(1) {
+  outline: none;
+}
+.production-budget .calendar > div:nth-child(1) > div:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+}
+.production-budget .calendar > div:nth-child(2) {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  margin-top: 1px;
+  right: 0;
+  z-index: 10;
+}
+.production-budget-section {
+  width: 100%;
+  height: calc(100% - 38px);
+  display: flex;
+}
+.production-budget-section .col-1 {
+  width: 384px;
+  height: 100%;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.production-budget-section .col-1 > div:nth-child(1) {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.6);
+  vertical-align: middle;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-left: 20px;
+  position: relative;
+}
+.production-budget-section .col-1 > div:nth-child(1) > span:nth-child(2) {
+  color: #fff;
+  margin-left: 5px;
+}
+.production-budget-section .col-1 > div:nth-child(1) > span:nth-child(3) {
+  color: #0cf;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.production-budget-section .col-1 > div:nth-child(1) > span:nth-child(4) {
+  position: absolute;
+  right: 50px;
+}
+.production-budget-section .col-1 .col-1-row {
+  background-color: rgba(0, 204, 255, 0.2);
+  height: 40px;
+  line-height: 40px;
+  text-indent: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.production-budget-section .col-1 .col-1-row.active {
+  background-color: rgba(0, 140, 255, 0.6);
+}
+.production-budget-section .col-1 .col-1-row:hover {
+  background-color: rgba(0, 204, 255, 0.6);
+}
+.production-budget-section .col-1 .col-1-row > div:nth-child(1) {
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.production-budget-section .col-1 .col-1-row > div:nth-child(2) {
+  width: 2px;
+  height: 20px;
+  background-color: #0cf;
+  position: absolute;
+  right: 220px;
+}
+.production-budget-section .col-1 .col-1-row > div:nth-child(3) {
+  background-color: rgb(0, 204, 255);
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  right: 70px;
+}
+.production-budget-section .col-1 .col-1-row > div:nth-child(4) {
+  position: absolute;
+  right: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.production-budget-section .col-2 {
+  width: calc(100% - 384px);
+  height: 100%;
+  font-size: 14px;
+  background-color: rgba(37, 52, 65, 0.6);
+  color: black;
+}

@@ -1,0 +1,70 @@
+.inverter-yield {
+  margin-left: 20px;
+}
+.inverter-yield-container {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.inverter-yield-header {
+  width: 100%;
+  height: 45px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 221, 221, 0.1),
+    rgba(2, 221, 221, 0)
+  );
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+.inverter-yield-header > div:nth-child(1) {
+  width: 85%;
+}
+.inverter-yield-header > div:nth-child(2) {
+  display: flex;
+  width: 30px;
+}
+.inverter-yield-sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.inverter-yield-sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.inverter-yield-sort-up.active,
+.inverter-yield-sort-down.active {
+  color: rgb(0, 204, 255);
+}
+.inverter-yield-body {
+  width: 100%;
+  height: 205px;
+  overflow-y: auto;
+  color: rgba(255, 255, 255, 0.4);
+}
+.inverter-yield-bar {
+  height: 6px;
+  background: rgb(0, 204, 255);
+  max-width: 80%;
+}
+.inverter-yield-body-row {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.inverter-yield-body-row > div {
+  margin-top: 5px;
+}
+.inverter-yield-body-row > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 204, 255);
+}
+.inverter-yield-body-row > div:nth-child(2) > div {
+  margin-right: 10px;
+}

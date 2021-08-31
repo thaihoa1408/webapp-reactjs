@@ -1,0 +1,22 @@
+.active-power {
+  width: 50%;
+}
+.active-power-header {
+  border-left: 4px solid #0cf;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.active-power-header > div:nth-child(2) {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-left: 10px;
+  font-size: 14px;
+}
+.active-power-body {
+  color: #111;
+  background-color: hsla(0, 0%, 100%, 0.151);
+  margin-top: 10px;
+  height: 170px;
+  width: 100%;
+  padding: 0;
+}

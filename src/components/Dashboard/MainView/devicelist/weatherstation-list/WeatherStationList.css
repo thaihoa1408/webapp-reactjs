@@ -1,0 +1,141 @@
+.weatherstation-list {
+  width: 100%;
+  height: 100%;
+}
+.weatherstation-list-search {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.weatherstation-list-search > input {
+  width: 250px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgba(4, 29, 34, 0.4);
+  border: 1px solid rgba(1, 204, 255, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 0 12px;
+}
+.weatherstation-list-search > input::placeholder {
+  color: rgba(185, 184, 184, 0.8);
+}
+.weatherstation-list-search > input:focus {
+  outline: none;
+}
+.weatherstation-list-search > div {
+  position: relative;
+  top: 15px;
+  left: -20px;
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.6);
+  transform: translateY(-50%);
+  background: url(../../../../../images/searchicon.png) no-repeat 50%;
+}
+.weatherstation-list .table-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
+.weatherstation-list table {
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.weatherstation-list table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 49px;
+  line-height: 47px;
+  background-color: #043447;
+  width: 25vw;
+  min-width: 200px;
+}
+.weatherstation-list table thead th > div {
+  cursor: pointer;
+}
+.weatherstation-list table td {
+  text-align: left;
+  background-color: #00425a;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.weatherstation-list table tbody tr:hover {
+  color: #00a7db;
+}
+.weatherstation-list table thead th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  padding-left: 20px;
+}
+.weatherstation-list table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+}
+.weatherstation-list table thead th:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 50;
+}
+
+.weatherstation-list table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 25;
+}
+.weatherstation-list table tbody td:nth-child(2) {
+  position: sticky;
+  left: 200px;
+  z-index: 25;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weatherstation-list tbody tr:nth-child(2n) td {
+  background-color: #003c54;
+}
+.weatherstation-list .sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.weatherstation-list .sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  transform: rotate(7deg);
+}
+.weatherstation-list .sort-up.active {
+  color: rgb(0, 204, 255);
+}
+.weatherstation-list .sort-down.active {
+  color: rgb(0, 204, 255);
+}
+.weatherstation-list-pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}

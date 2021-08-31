@@ -1,0 +1,90 @@
+.inverter-detail-production {
+  width: 49%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.inverter-detail-production-header {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.inverter-detail-production-header .timeselect {
+  position: absolute;
+  right: 180px;
+}
+.inverter-detail-production-header .timeselect > div:nth-child(1) {
+  width: 95px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.inverter-detail-production-header
+  .timeselect
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  position: absolute;
+  right: 7px;
+}
+.inverter-detail-production-header .timeselect > div:nth-child(2) {
+  width: 95px;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  top: 1px;
+  font-size: 14px;
+}
+.inverter-detail-production-header .timeselect > div:nth-child(2) > div {
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+}
+.inverter-detail-production-header .timeselect > div:nth-child(2) > div:hover {
+  background-color: rgba(0, 204, 255, 0.15);
+}
+.inverter-detail-production-header .calendar {
+  position: absolute;
+  right: 15px;
+}
+.inverter-detail-production-header .calendar > div:nth-child(1) {
+  width: 150px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.inverter-detail-production-header
+  .calendar
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+}
+.inverter-detail-production-header .calendar > div:nth-child(2) {
+  width: 250px;
+  position: absolute;
+  z-index: 10;
+}
+.inverter-detail-production-section {
+  width: 100%;
+  height: calc(100% - 44px);
+  color: black;
+}

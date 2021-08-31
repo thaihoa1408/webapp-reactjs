@@ -1,0 +1,27 @@
+.meter-detail-production {
+  width: 73%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.34);
+  font-size: 15px;
+  margin-left: 2%;
+}
+.meter-detail-production > header {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+}
+.meter-detail-production > header > span:nth-child(2) {
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  color: #3cc;
+  cursor: pointer;
+}
+.meter-detail-production > section {
+  width: 100%;
+  height: calc(100% -44px);
+  color: #000;
+}

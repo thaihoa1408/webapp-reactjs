@@ -1,0 +1,223 @@
+.charting-tool {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.charting-tool-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.charting-tool-header-sitedisplay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  background-color: #083541;
+  border: solid 1px #00f9fc;
+  cursor: pointer;
+  outline: none;
+}
+.charting-tool-header-sitedisplay > div:nth-child(1) {
+  padding-left: 10px;
+  width: 85%;
+}
+.charting-tool-header-sitedisplay-dropdown {
+  width: 200px;
+  max-height: 100px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #1a2224;
+  border: solid 1px #00f9fc;
+}
+.charting-tool-header-sitedisplay-dropdown > div {
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.charting-tool-header-sitedisplay-dropdown > div:hover {
+  color: yellow;
+  background-color: #083541;
+}
+.charting-tool-body {
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.charting-tool-container {
+  width: 100%;
+  min-height: 700px;
+  background-color: rgba(37, 52, 65, 0.829);
+  color: #fff;
+}
+.charting-tool-body-header {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  display: flex;
+  padding-left: 20px;
+  position: relative;
+}
+.charting-tool-body-header-template {
+  padding: 10px;
+  margin-right: 15px;
+  width: fit-content;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.charting-tool-body-header-template.active {
+  border-bottom: 1px solid #0cf;
+  color: #0cf;
+}
+.charting-tool-body-header-analysis {
+  position: absolute;
+  right: 16px;
+  padding-top: 7px;
+}
+.charting-tool-body-header-analysis > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  background: #00a7db;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  border: 1px solid #00a7db;
+  cursor: pointer;
+  color: #fff;
+  padding-right: 5px;
+  outline: none;
+}
+.charting-tool-body-header-analysis > div:nth-child(1) > div {
+  margin-left: 10px;
+}
+.charting-tool-body-header-analysis > div:nth-child(2) {
+  border-radius: 2px;
+  border: 1px solid #0cf;
+  min-height: 84px;
+  max-height: 18.7em;
+  margin-left: -1px;
+  background: rgba(0, 0, 0, 0.9);
+  line-height: 34px;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 10px;
+  margin-top: 1px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+.charting-tool-body-header-analysis > div:nth-child(2) > div:hover {
+  color: yellow;
+}
+.charting-tool-body-content {
+  padding: 20px;
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.charting-tool-body-content .chart-icon {
+  font-size: 20px;
+  color: #00a7db;
+  position: relative;
+  top: 3px;
+}
+.charting-tool-delete-analysis {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charting-tool-delete-analysis-container {
+  width: 400px;
+  background-color: #094d67;
+  color: #fff;
+  position: relative;
+  left: -120px;
+  top: -30px;
+}
+.charting-tool-delete-analysis-container > header {
+  width: 100%;
+  line-height: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 0 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.charting-tool-delete-analysis-container > header > span:nth-child(2) {
+  position: absolute;
+  right: 20px;
+}
+.charting-tool-delete-analysis-container > p {
+  margin: 40px 0 49px;
+  padding: 0 20px;
+  font-size: 15px;
+  height: 24px;
+  text-align: left;
+  line-height: 24px;
+}
+.charting-tool-delete-analysis-container > div {
+  height: 62px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 8px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+.charting-tool-delete-analysis-container > div > span:nth-child(1) {
+  color: #0cf;
+  font-weight: 500;
+  border: 1px solid #00a7db;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 14px;
+  width: 92px;
+}
+.charting-tool-delete-analysis-container > div > span:nth-child(1):hover {
+  border: 1px solid #0cf;
+}
+.charting-tool-delete-analysis-container > div > span:nth-child(2) {
+  color: #fff;
+  background: #00a7db;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 14px;
+  border: 1px solid #00a7db;
+  width: 92px;
+}
+.charting-tool-delete-analysis-container > div > span:nth-child(2):hover {
+  background: #0cf;
+}

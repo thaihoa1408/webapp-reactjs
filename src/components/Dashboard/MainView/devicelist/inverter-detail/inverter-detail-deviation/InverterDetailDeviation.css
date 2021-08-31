@@ -1,0 +1,212 @@
+.inverter-detail-deviation {
+  width: 49%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  margin-left: 2%;
+}
+.inverter-detail-deviation-header {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  font-size: 15px;
+}
+.inverter-detail-deviation-header > div {
+  line-height: 44px;
+  width: 20%;
+  opacity: 0.4;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.inverter-detail-deviation-header > div.active {
+  color: #fff;
+  opacity: 1;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  border-top: none;
+  border-bottom: none;
+}
+.inverter-detail-deviation-header > div:nth-child(3) {
+  width: 60%;
+}
+.inverter-detail-deviation-section {
+  width: 100%;
+  height: calc(100% - 44px);
+  color: black;
+}
+.inverter-detail-deviation-section .apexcharts-tooltip {
+  height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 50;
+  cursor: pointer;
+  user-select: all;
+}
+.string-current-container {
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+}
+.string-current-container .iner-box-inactive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.string-current-container .inner-box-active {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateX(-180deg);
+}
+.inverter-detail-deviation-section .string-current-front {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.inverter-detail-deviation-section .string-current-back {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateX(-180deg);
+}
+.inverter-detail-deviation-section .string-current-front > header,
+.inverter-detail-deviation-section .string-current-back > header {
+  height: 46px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > header
+  > div:nth-child(1)
+  > span,
+.inverter-detail-deviation-section
+  .string-current-back
+  > header
+  > div:nth-child(1)
+  > span {
+  margin-left: 18px;
+  font-size: 15px;
+  color: #28c6de;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > header
+  > div:nth-child(1)
+  > span:nth-child(2n),
+.inverter-detail-deviation-section
+  .string-current-back
+  > header
+  > div:nth-child(1)
+  > span:nth-child(2n) {
+  color: white;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > header
+  > div:nth-child(1) {
+  width: 90%;
+}
+.inverter-detail-deviation-section
+  .string-current-back
+  > header
+  > div:nth-child(1) {
+  width: 80%;
+}
+.inverter-detail-deviation-section
+  .string-current-back
+  > header
+  > div:nth-child(2) {
+  display: flex;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > header
+  > div:nth-child(2)
+  > div,
+.inverter-detail-deviation-section
+  .string-current-back
+  > header
+  > div:nth-child(2)
+  > div {
+  line-height: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  color: #28c6de;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-width: 60px;
+}
+.inverter-detail-deviation-section .string-current-front > section,
+.inverter-detail-deviation-section .string-current-back > section {
+  width: 100%;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(103, 236, 255, 0.25),
+    rgba(103, 236, 255, 0)
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.inverter-detail-deviation-section .string-current-front > section > div,
+.inverter-detail-deviation-section .string-current-back > section > div {
+  width: calc(12.5% - 1px);
+  height: 56px;
+  margin-right: 1px;
+  font-size: 14px;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > section
+  > div
+  > div:nth-child(1),
+.inverter-detail-deviation-section
+  .string-current-back
+  > section
+  > div
+  > div:nth-child(1) {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.inverter-detail-deviation-section
+  .string-current-front
+  > section
+  > div
+  > div:nth-child(2),
+.inverter-detail-deviation-section
+  .string-current-back
+  > section
+  > div
+  > div:nth-child(2) {
+  border-color: rgb(24, 121, 133);
+  border: 1px solid #1a7886;
+  background-color: rgb(24, 121, 133);
+  width: 100%;
+  height: calc(100% - 25px);
+  padding-top: 3px;
+  text-align: center;
+}

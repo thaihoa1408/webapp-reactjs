@@ -1,0 +1,38 @@
+.manage-account {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.manage-account-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.manage-account-header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+  padding-left: 20px;
+}
+.manage-account-header > div {
+  cursor: pointer;
+}
+.manage-account-header .select-inactive {
+  width: 150px;
+  height: 30px;
+  background-color: #083541;
+  border: solid 1px #00f9fc;
+  color: #f1f1f1;
+  text-align: center;
+}
+.manage-account-header .select-active {
+  width: 150px;
+  height: 30px;
+  background-color: #0065c3;
+  border: solid 1px #00f9fc;
+  color: #f1f1f1;
+  text-align: center;
+}

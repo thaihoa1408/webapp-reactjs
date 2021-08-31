@@ -1,0 +1,126 @@
+.siteview {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.siteview-header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+  display: flex;
+}
+.siteview-header > div {
+  margin-right: 20px;
+}
+.siteview-header-sitedisplay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  background-color: #083541;
+  border: solid 1px #00f9fc;
+  outline: none;
+}
+
+.siteview-header-sitedisplay > div:nth-child(1) {
+  padding-left: 10px;
+  width: 85%;
+}
+.siteview-header-sitedisplay-dropdown {
+  width: 200px;
+  max-height: 100px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #1a2224;
+  border: solid 1px #00f9fc;
+}
+.siteview-header-sitedisplay-dropdown > div {
+  padding: 5px;
+  width: 100%;
+}
+.siteview-header-sitedisplay-dropdown > div:hover {
+  color: yellow;
+  background-color: #083541;
+}
+.sitedisplay-dropdown-item {
+  text-decoration: none;
+  color: #fff;
+}
+.siteview-body {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 70px;
+}
+.siteview-row {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.btn-bg {
+  background-color: #009cc3;
+}
+.button-select {
+  display: flex;
+}
+.button-select > button {
+  width: 70px;
+  height: 30px;
+  border-radius: 0;
+  border: 1px solid #28c6de;
+  font-size: 15px;
+  color: #fff;
+}
+.btn-bg:focus {
+  outline: none;
+}
+.button-select > div {
+  margin-left: 20px;
+}
+.btn-bg-inactive {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ccc;
+}
+.btn-bg-inactive:focus {
+  outline: none;
+}
+.row-siteview {
+  width: calc(100vw - 250px);
+  height: 292px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.row-siteview-header {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(100% - 2px);
+  height: 40px;
+  background-color: teal;
+  color: #f1f1f1;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+.row-siteview-header div {
+  margin-left: 30px;
+}
+.row-siteview-body {
+  display: flex;
+  justify-content: center;
+}
+.row-table {
+  width: calc(100vw - 250px);
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,153 @@
+.production-input {
+  width: 97%;
+  margin-left: 20px;
+}
+.production-input > header {
+  height: 44px;
+  width: 100%;
+  line-height: 44px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 221, 221, 0.1),
+    rgba(2, 221, 221, 0)
+  );
+  background-color: rgba(0, 0, 0, 0.34);
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+}
+.production-input > header > div:nth-child(2) {
+  color: hsla(0, 0%, 100%, 0.6);
+  position: absolute;
+  right: 280px;
+  font-size: 14px;
+}
+.production-input > header > div:nth-child(3) {
+  position: absolute;
+  right: 130px;
+}
+.production-input > header > div:nth-child(3) .template {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0cf;
+  cursor: pointer;
+}
+.production-input > header > div:nth-child(4) {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+.production-input > header > div:nth-child(4) > div:nth-child(1) {
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  background: #00a7db;
+  border-radius: 2px;
+  margin: auto;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+.production-input > header > div:nth-child(4) > div:nth-child(1) > span {
+  margin-right: 5px;
+}
+.production-input > header > div:nth-child(4) > div:nth-child(2) {
+  width: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 70;
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  top: 1px;
+  font-size: 13px;
+}
+.production-input > header > div:nth-child(4) > div:nth-child(2) > div {
+  height: 40px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.production-input > header > div:nth-child(4) > div:nth-child(2) > div:hover {
+  background-color: rgba(0, 204, 255, 0.15);
+}
+.production-input > section {
+  width: 100%;
+}
+.production-input .table-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
+.production-input table {
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.production-input table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 49px;
+  line-height: 47px;
+  width: 10vw;
+  min-width: 150px;
+  background-color: #012635;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3) rgba(242, 242, 244, 0.1);
+}
+.production-input table thead th > div {
+  cursor: pointer;
+}
+.production-input table td {
+  text-align: center;
+  background-color: #00425a;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3) rgba(242, 242, 244, 0.1);
+}
+.production-input table td span {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.production-input table thead th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  padding-left: 20px;
+}
+.production-input table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+}
+.production-input table thead th:nth-child(16) {
+  position: sticky;
+  right: 0;
+  z-index: 50;
+}
+.production-input table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 25;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.production-input table tbody td:nth-child(16) {
+  position: sticky;
+  right: 0;
+  z-index: 25;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.production-input tbody tr:nth-child(2n) td {
+  background-color: #003c54;
+}

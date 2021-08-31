@@ -1,0 +1,35 @@
+.activepower-capacity {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+.activepower-capacity > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.activepower-capacity > div:nth-child(1) > div:nth-child(1) {
+  width: 50%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  border-right: 1px solid darkgrey;
+}
+.activepower-capacity > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),
+.activepower-capacity > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  font-size: 25px;
+}
+.activepower-capacity > div:nth-child(1) > div:nth-child(2) {
+  width: 50%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  border-left: 1px solid darkgrey;
+}

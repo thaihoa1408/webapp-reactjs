@@ -1,0 +1,132 @@
+.leaderboard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+}
+.leaderboard-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.leaderboard-body {
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100% - 50px);
+  color: #fff;
+}
+.leaderboard-body-row-1 {
+  width: 100%;
+  height: calc(50% - 20px);
+}
+.leaderboard-body-row-2 {
+  margin-top: 20px;
+  width: 100%;
+  height: calc(50% - 20px);
+}
+.leaderboard-completion-rate {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leadboard-completion-rate-container {
+  width: 490px;
+  height: 370px;
+  background-color: #094d67;
+  position: relative;
+}
+.leadboard-completion-rate-container > header {
+  background: rgba(0, 0, 0, 0.2);
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+}
+.leadboard-completion-rate-container > header > span {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.leadboard-completion-rate-container > section {
+  padding: 20px;
+  width: 100%;
+  height: 256px;
+  color: #fff;
+}
+.leadboard-completion-rate-container > section > div:nth-child(1) {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+.leadboard-completion-rate-container
+  > section
+  > div:nth-child(1)
+  > span:nth-child(2) {
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.leadboard-completion-rate-container > section > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.leadboard-completion-rate-container > section > div:nth-child(2) > div {
+  width: calc(100% / 6);
+  font-size: 15px;
+}
+.leadboard-completion-rate-container
+  > section
+  > div:nth-child(2)
+  > div
+  > div:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.leadboard-completion-rate-container
+  > section
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2) {
+  background-color: rgba(81, 81, 81, 0.3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.leadboard-completion-rate-container > footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+  height: 70px;
+  width: 100%;
+}
+.leadboard-completion-rate-container > footer > div {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #0cf;
+  border-radius: 2px;
+  color: #0cf;
+  cursor: pointer;
+}

@@ -1,0 +1,197 @@
+.inverter-detail {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.inverter-detail-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.inverter-detail-body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  margin-top: 40px;
+}
+.inverter-detail-body-row-1 {
+  width: 97%;
+  height: 45px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-body-row-1 > span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.inverter-detail-body-row-2 {
+  width: 97%;
+  height: 150px;
+  margin-left: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(53, 206, 210, 0),
+    rgba(53, 206, 210, 0.25) 47%,
+    rgba(53, 206, 210, 0)
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+.inverter-detail-body-row-2 .row-1 {
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-body-row-2 .row-1 > div:nth-child(1) {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.inverter-detail-body-row-2 .row-1 > div:nth-child(2) {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(7, 201, 136);
+  color: rgb(7, 201, 136);
+  margin-right: 5px;
+}
+.inverter-detail-body-row-2 .row-1 > div:nth-child(3) {
+  color: rgb(7, 201, 136);
+}
+.inverter-detail-body-row-2 .row-2 {
+  margin-top: 20px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.inverter-detail-body-row-2 .row-3 {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.inverter-detail-body-row-2 .row-2 > span {
+  margin-right: 20px;
+}
+.inverter-detail-body-row-2 > div:nth-child(2) {
+  position: absolute;
+  right: 20px;
+}
+.inverter-detail-body-row-2 > div:nth-child(2) > span:nth-child(3n) {
+  border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin: 0 10px;
+  vertical-align: middle;
+  height: 30px;
+  display: inline-block;
+}
+.inverter-detail-body-row-2 > div:nth-child(2) > span:nth-child(3n + 1) {
+  color: rgb(27, 213, 226);
+  margin-right: 10px;
+}
+.inverter-detail-body-row-3 {
+  width: 97%;
+  height: 178px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.inverter-detail-body-row-3 .table-1 {
+  width: 49%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.inverter-detail-body-row-3 .table-1 > header {
+  display: flex;
+  width: 100%;
+  height: 44px;
+}
+.inverter-detail-body-row-3 .table-1 > header > div {
+  line-height: 44px;
+  width: 15%;
+  opacity: 0.4;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+}
+.inverter-detail-body-row-3 .table-1 > header > div.active {
+  color: #fff;
+  opacity: 1;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  border-top: none;
+  border-bottom: none;
+}
+.inverter-detail-body-row-3 .table-1 > header > div:nth-child(4) {
+  width: 55%;
+}
+.inverter-detail-body-row-3 .table-1 > section {
+  width: 100%;
+  height: calc(100% -44px);
+}
+.inverter-detail-body-row-3 .table-1 > section > div {
+  display: flex;
+  height: 44px;
+  width: 100%;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+.inverter-detail-body-row-3 .table-1 > section > div:nth-child(1) {
+  border-top: none;
+}
+.inverter-detail-body-row-3 .table-1 > section > div > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-body-row-3 .table-1 > section > div > div:nth-child(1) {
+  padding-left: 10px;
+}
+.inverter-detail-body-row-3
+  .table-1
+  > section
+  > div
+  > div:nth-child(2)
+  > span:nth-child(1) {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  margin-right: 15px;
+}
+.inverter-detail-body-row-3 .table-1 > section span {
+  color: #3cc;
+  margin-right: 15px;
+}
+.inverter-detail-body-row-3 .table-2 {
+  margin-left: 2%;
+  width: 49%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.inverter-detail-body-row-3 .table-2 > header {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.inverter-detail-body-row-4 {
+  width: 97%;
+  height: 400px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.inverter-detail-body-row-5 {
+  width: 97%;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}

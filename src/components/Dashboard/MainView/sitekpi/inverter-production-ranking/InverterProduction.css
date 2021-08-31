@@ -1,0 +1,71 @@
+.inverter-production {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.inverter-production-container {
+  width: 100%;
+  height: 520px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.inverter-production-header {
+  width: 100%;
+  height: 45px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 221, 221, 0.1),
+    rgba(2, 221, 221, 0)
+  );
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+.inverter-production-header > div:nth-child(1) {
+  width: 85%;
+}
+.inverter-production-header > div:nth-child(2) {
+  display: flex;
+  width: 30px;
+}
+.inverter-production-sort-up {
+  margin-right: -10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.inverter-production-sort-down {
+  margin-left: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.inverter-production-sort-up.active,
+.inverter-production-sort-down.active {
+  color: rgb(0, 204, 255);
+}
+.inverter-production-body {
+  width: 100%;
+  height: 475px;
+  overflow-y: auto;
+  color: rgba(255, 255, 255, 0.4);
+}
+.inverter-production-bar {
+  height: 6px;
+  background: rgb(51, 190, 133);
+  max-width: 80%;
+}
+.inverter-production-body-row {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.inverter-production-body-row > div {
+  margin-top: 5px;
+}
+.inverter-production-body-row > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  color: rgb(51, 190, 133);
+}
+.inverter-production-body-row > div:nth-child(2) > div {
+  margin-right: 10px;
+}

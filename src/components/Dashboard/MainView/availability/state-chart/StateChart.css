@@ -1,0 +1,22 @@
+.state-chart {
+  width: 97%;
+  height: 100%;
+  margin-left: 20px;
+  background: rgba(37, 52, 65, 0.6);
+}
+.state-chart > header {
+  height: 38px;
+  line-height: 38px;
+  padding-left: 20px;
+  font-size: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(103, 236, 255, 0.25),
+    rgba(103, 236, 255, 0)
+  );
+}
+.state-chart > section {
+  width: 100%;
+  height: calc(100% - 38px);
+  color: black;
+}

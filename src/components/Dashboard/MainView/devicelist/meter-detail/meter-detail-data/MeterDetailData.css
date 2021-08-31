@@ -1,0 +1,49 @@
+.meter-detail-data {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+.meter-detail-data table {
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.meter-detail-data table thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 25vw;
+}
+.meter-detail-data table thead th > div {
+  cursor: pointer;
+}
+.meter-detail-data table td {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.28);
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.meter-detail-data table tbody tr:hover {
+  background-color: #00a7db;
+}
+.meter-detail-data table thead th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  padding-left: 20px;
+}
+.meter-detail-data tbody tr:nth-child(2n) td {
+  background-color: rgba(0, 0, 0, 0.35);
+}

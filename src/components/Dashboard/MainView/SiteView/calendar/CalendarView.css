@@ -1,0 +1,28 @@
+.calendar-view {
+  position: relative;
+}
+.calendar-view-header {
+  background-color: #083541;
+  height: 30px;
+  width: 200px;
+  border: solid 1px #00f9fc;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  outline: none;
+}
+.calendar-view-header > div:nth-child(1) {
+  margin-left: 10px;
+  width: 80%;
+}
+.calendar-view-header > div:nth-child(2) {
+  font-size: 20px;
+}
+.calendar-view-body {
+  position: absolute;
+  z-index: 50;
+  margin-top: 5px;
+  width: 280px;
+}

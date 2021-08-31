@@ -1,0 +1,109 @@
+.meter-detail {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.meter-detail-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.meter-detail-body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  margin-top: 40px;
+}
+.meter-detail-body-row-1 {
+  width: 97%;
+  height: 45px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.meter-detail-body-row-1 > span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.meter-detail-body-row-2 {
+  width: 98%;
+  height: 100px;
+  margin-left: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 204, 255, 0.05),
+    rgba(0, 204, 255, 0.25) 50%,
+    rgba(0, 204, 255, 0.05)
+  );
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+.meter-detail-body-row-2 .row-1 {
+  display: flex;
+  align-items: center;
+}
+.meter-detail-body-row-2 .row-1 > div:nth-child(1) {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.meter-detail-body-row-2 .row-1 > div:nth-child(2) {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(7, 201, 136);
+  color: rgb(7, 201, 136);
+  margin-right: 5px;
+}
+.meter-detail-body-row-2 .row-1 > div:nth-child(3) {
+  color: rgb(7, 201, 136);
+}
+.meter-detail-body-row-2 .row-2 {
+  margin-top: 20px;
+  color: white;
+}
+.meter-detail-body-row-2 .row-2 > span {
+  margin-right: 20px;
+}
+.meter-detail-body-row-2 .row-2 > span > span {
+  color: #3cc;
+}
+.meter-detail-body-row-2 > div:nth-child(2) {
+  position: absolute;
+  right: 20px;
+}
+.meter-detail-body-row-2 > div:nth-child(2) > span:nth-child(3n) {
+  border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin: 0 10px;
+  vertical-align: middle;
+  height: 30px;
+  display: inline-block;
+}
+.meter-detail-body-row-2 > div:nth-child(2) > span:nth-child(3n + 1) {
+  color: rgb(27, 213, 226);
+  margin-right: 10px;
+}
+.meter-detail-body-row-3 {
+  width: 98%;
+  height: 323px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.meter-detail-body-row-4 {
+  width: 98%;
+  height: 300px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}

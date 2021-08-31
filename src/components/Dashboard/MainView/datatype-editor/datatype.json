@@ -1,0 +1,56 @@
+{
+    "Site Infor": [
+        {
+            "name": "Site Power (P)",
+            "value": "SitePower"
+        },
+        {
+            "name": "Site Reactive Power (Q)",
+            "value": "SiteReactivePower"
+        },
+        {
+            "name": "Site Voltage (V)",
+            "value": "SiteVoltage"
+        },
+        {
+            "name": "Site Current (I)",
+            "value": "SiteCurrent"
+        }
+    ],
+    "Inverter Infor": [
+        {
+            "name": "Inverter Power (P)",
+            "value": "InverterPower"
+        },
+        {
+            "name": "Inverter Reactive Power (Q)",
+            "value": "InverterReactivePower"
+        },
+        {
+            "name": "Inverter Voltage (V)",
+            "value": "InverterVoltage"
+        },
+        {
+            "name": "Inverter Current (I)",
+            "value": "InverterCurrent"
+        }
+    ],
+    "Weather Infor": [
+        {
+            "name": "Irradiation",
+            "value": "Irradiation"
+        },
+        {
+            "name": "Ambient Temperature",
+            "value": "AmbientTemperature"
+        },
+        {
+            "name": "Module Temperature",
+            "value": "ModuleTemperature"
+        },
+        {
+            "name": "Wind Speed",
+            "value": "WindSpeed"
+        }
+    ]
+}

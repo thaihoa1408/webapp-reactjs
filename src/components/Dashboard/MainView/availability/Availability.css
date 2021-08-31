@@ -1,0 +1,128 @@
+.availability {
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+}
+.availability-header {
+  object-fit: cover;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: url(../../../../images/pic_1.jpg) no-repeat 0 0/100%;
+}
+.availability-header-sitedisplay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  background-color: #083541;
+  border: solid 1px #00f9fc;
+  outline: none;
+}
+.availability-header-sitedisplay > div:nth-child(1) {
+  padding-left: 10px;
+  width: 85%;
+}
+.availability-header-sitedisplay-dropdown {
+  width: 200px;
+  max-height: 100px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #1a2224;
+  border: solid 1px #00f9fc;
+}
+.availability-header-sitedisplay-dropdown > div {
+  padding: 5px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.availability-header-sitedisplay-dropdown > div:hover {
+  color: yellow;
+  background-color: #083541;
+}
+.availability-body {
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 110px);
+  color: #fff;
+}
+.availability-body-row-1 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.availability-body-row-1 > div {
+  margin-right: 10px;
+}
+.availability-body-row-1 > div:nth-child(2) {
+  border: 1px solid rgb(0, 204, 255);
+  color: rgb(0, 204, 255);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 76px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.availability-body-row-1 > div:nth-child(3) {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 76px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.availability-body-row-1 .period-infor {
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  background: rgba(4, 29, 34, 0.6);
+  border: 1px solid rgba(0, 204, 255, 0.6);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  outline: none;
+}
+.availability-body-row-1 .period-infor > div {
+  margin-left: 15px;
+}
+.availability-body-row-1 .period-dropdown {
+  width: 600px;
+  height: fit-content;
+  padding-left: 10px;
+  border: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  position: absolute;
+  z-index: 50;
+  margin-top: 5px;
+}
+.availability-body-row-2 {
+  width: 100%;
+  height: 376px;
+}
+.availability-body-row-3 {
+  width: 100%;
+  height: 380px;
+  margin-top: 20px;
+}
